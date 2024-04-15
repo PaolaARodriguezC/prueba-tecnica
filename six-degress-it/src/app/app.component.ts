@@ -19,7 +19,7 @@ export class AppComponent  {
 
    url = 'https://jsonplaceholder.typicode.com/todos/1';
 
-  constructor(private formBuilder: FormBuilder, private httpClient: HttpClient,  private router: Router) {}
+  constructor(private formBuilder: FormBuilder) {}
 
   onSubmit(){
     if(this.loginForm.invalid){
@@ -29,7 +29,7 @@ export class AppComponent  {
 
  
 
-  /*****Peticion http****** */ 
+  /*****Peticion http******
 getPosts(){
   return new Promise(resolve =>{
     this.httpClient.get(this.url).subscribe(data=>{
@@ -41,7 +41,7 @@ getPosts(){
     });
   });
  }
-
+ */ 
 
   
   /*visualiza la contraseña o la oculta* */

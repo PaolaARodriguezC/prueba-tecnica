@@ -10,14 +10,14 @@ export class MenuComponent  implements OnInit {
 
   username: string = '';
   url = 'https://jsonplaceholder.typicode.com/todos/1';
-  constructor(private httpClient : HttpClient) { }
-
+  constructor() { }
+ 
   ngOnInit() {
-    this.httpClient.get<any>(this.url).subscribe(
+  /* this.httpClient.get<any>(this.url).subscribe(
       (response) =>{
         this.username = response.title
       }
-    )
+    )*/
   }
 
 }
